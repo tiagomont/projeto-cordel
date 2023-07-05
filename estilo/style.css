@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat+Brush&display=swap');
+
+:root {
+	--fonte01: Verdana, Geneva, Tahoma, sans-serif;
+	--fonte02: 'Russo One', sans-serif;
+	--fonte03: 'Caveat Brush', cursive;
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+}
+
+html, body {
+	min-height: 100vh;
+	background-color: darkgray;
+	font-family: var(--fonte01);
+}
+
+header {
+	background-color: black;
+	color: white;
+	text-align: center;
+}
+
+header > h1 {
+	font-family: var(--fonte02);
+	font-variant: small-caps;
+	font-size: 8vw;
+	padding-top: 50px;
+}
+
+header > p {
+	padding-bottom: 50px;
+}
+
+header a, footer a {
+	text-decoration: none;
+	font-weight: bolder;
+	color: white;
+}
+
+header a:hover, footer a:hover {
+	text-decoration: underline;
+	color: lightgray;
+}
+
+section {
+	padding: 10vh 0px 10vh 30px;
+	line-height: 2.3em;
+	font-family: var(--fonte03);
+	font-size: 4.5vw;
+}
+
+section > p {
+	padding-bottom: 2em;
+}
+
+section.normal {
+	background-color: white;
+	color: black;
+}
+
+section.imagem {
+	color: white;
+	background-color: gray;
+	background-attachment: fixed;
+	box-shadow: inset 0px 0px 12px 0px #00000099;;
+
+}
+
+section.imagem > p {
+	background-color: #00000052;
+	padding: 5px;
+	display: inline-block;
+	text-shadow: 1px 1px 0px black;
+}
+
+section#img01 {
+	background-image: url(../imagens/background001.jpg);
+	background-position: right center;
+	background-size: cover;
+}
+
+section#img02 {
+	background-image: url(../imagens/background002.jpg);
+	background-position: right center;
+	background-size: cover;
+}
+
+footer {
+	background-color: black;
+	color: white;
+	text-align: center;
+	padding: 5px;
+}
